@@ -17,7 +17,7 @@ In this step, we will accomplish the following:
 - Keep files created and updated by Copilot agent mode until it is finished.
 - Agent mode has the ability to evaluate your code base and execute commands and add/refactor/delete parts of your code base and automatically self heal if it or you makes a mistake in the process.
 
-### :keyboard: Activity: Setup Django REST Framework, restart the server, and test the API
+### Activity: Setup Django REST Framework, restart the server, and test the API
 
 > 🪧 **Note:** 
 - Make sure to replace [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME] with your codespace name.
@@ -40,7 +40,7 @@ In this step, we will accomplish the following:
 
 > ❕ **Important:** Don't start the Python Django app in the way that GitHub Copilot agent mode suggests hit **cancel**. Follow the next activity instead.
 
-### :keyboard: Activity: Start the Python Django app and check the output
+### Activity: Start the Python Django app and check the output
 Now, let's actually try running the Django application! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
 
 

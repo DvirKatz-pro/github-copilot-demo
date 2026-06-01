@@ -5,11 +5,11 @@ In this step, we will accomplish the following:
 - Create the octofit-tracker application directory structure.
 - Create the octofit-tracker/backend and octofit-tracker/frontend directories.
 - Create the octofit-tracker/backend/requirements.txt file.
-- Create a custom instructions file (instructions.md) using the skill /create-instructions.
+- Create a custom instructions file (.github/copilot-instructions.md) from the files in the `docs` folder.
 
 1. Open all files in the `docs` folder and keep this file open in the editor throughout this exercise.
     1.  agent mode uses `mona-high-school-fitness-tracker.md` and `octofit_story.md` as a reference to create the application
-2. Copy and paste the following prompt(s) in the GitHub Copilot Chat and select the "Agent" instead of "Ask" or "Plan" from the drop down where you are inserting the prompt.
+2. Follow the activities below. When an activity includes a prompt, copy and paste it in GitHub Copilot Chat and select "Agent" instead of "Ask" or "Plan" from the drop down where you are inserting the prompt.
 
 <img src="../../assets/copilot-chat.png" width=40% height=40%>
 
@@ -20,22 +20,25 @@ In this step, we will accomplish the following:
 - Keep files created and updated by Copilot agent mode until it is finished.
 - Agent mode has the ability to evaluate your code base and execute commands and add/refactor/delete parts of your code base and automatically self heal if it or you makes a mistake in the process.
 
-### :keyboard: Activity: Prompt for GitHub Copilot in agent mode to start the creation of our application
+### Activity: Create the custom instructions file
 
-Let's take the following step by step and generate instructions in this order and execute the commands.
-Use docs/mona-high-school-fitness-tracker.md as a guide for the project structure and requirements.
+Create a custom instructions file for this workspace before asking Copilot agent mode to create the application structure.
 
-1. Understand the story of creating the fitness application from the docs/octofit_story.md file.
-2. Create a custom instructions file (.github/copilot-instructions.md) using the /create-instructions skill to guide Copilot throughout this project. Make sure to reference the docs/mona-high-school-fitness-tracker.md and docs/octofit_story.md files in the instructions.
-3. Create the initial directory structure for the octofit-tracker application octofit-tracker/backend, octofit-tracker/frontend.
-4. Setup the backend python virtual environment, octofit-tracker/backend/requirements.txt based on the instructions, and install required packages.
+1. In GitHub Copilot Chat, click the **+** icon.
+2. Select **Instructions** at the top of the menu.
+3. Click on "Configure Instructions" and name the file "copilot-instructions.md`.inside the /copilot folder
+4. Open each file in the `docs` folder:
+    - `docs/mona-high-school-fitness-tracker.md`
+    - `docs/octofit_story.md`
+5. Copy the contents of both docs files into `.github/copilot-instructions.md` so Copilot has the project story, requirements, and expected application structure available throughout the rest of the exercise.
+6. Save `.github/copilot-instructions.md`.
 
- Don't proceed with the next activity until all of these steps are completed.
+Don't proceed with the next activity until all of these steps are completed.
 
 
 > ❕ **Important:** Once the above activity installs all the required packages, proceed to the next activity.
 
-### :keyboard: Activity: Let's install MongoDB
+### Activity: Let's install MongoDB
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -52,7 +55,7 @@ Use docs/mona-high-school-fitness-tracker.md as a guide for the project structur
 - If the command completes in the terminal but agent mode shows it is still running click stop.
 - You may need to paste the prompt again in agent mode.
 
-### :keyboard: Activity: Let's start and verify MongoDB is running
+### Activity: Let's start and verify MongoDB is running
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >

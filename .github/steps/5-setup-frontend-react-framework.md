@@ -2,6 +2,7 @@
 
 In this step, we will accomplish the following:
 
+- Create a React-focused custom agent with `/create-agent` and install the `Premium Frontend Ui` skill from the GitHub `awesome-copilot` repository.
 - Setup the octofit-tracker frontend React framework.
 - Update the following components to include the React framework:
   - src/App.js
@@ -24,7 +25,33 @@ In this step, we will accomplish the following:
 - Keep files created and updated by Copilot agent mode until it is finished.
 - Agent mode has the ability to evaluate your code base and execute commands and add/refactor/delete parts of your code base and automatically self heal if it or you makes a mistake in the process.
 
-### :keyboard: Activity: Install the octofit-tracker frontend React framework
+### Activity: Create the React custom agent and install the Premium Frontend Ui skill
+
+> ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
+>
+> ```prompt
+> Before starting the React frontend activities, let's create the Copilot customizations for this workspace by using the `/create-agent` skill, the Awesome Copilot website, and the GitHub CLI.
+>
+> 1. In GitHub Copilot Chat, click on the + icon to add a new agent.
+> 2. Use the `Expert React Frontend Engineer` agent from `github/awesome-copilot` as the source for the agent design.
+> 3. In the terminal, use the GitHub CLI to download the upstream React agent file into the workspace instead of copying it manually:
+>
+>    
+>    mkdir -p .github/agents
+>    gh api repos/github/awesome-copilot/contents/agents/expert-react-frontend-engineer.agent.md --header "Accept: application/vnd.github.raw" > .github/agents/expert-react-frontend-engineer.agent.md
+>    
+>
+> 4. Go to the Awesome Copilot website at `https://awesome-copilot.github.com`, search for the `Premium Frontend Ui` skill, and use the **Copy install** button for that skill.
+> 5. Paste and run the copied install command in the terminal so the skill is installed from Awesome Copilot.
+> 6. Verify that `.github/agents/expert-react-frontend-engineer.agent.md` exists and that the `Premium Frontend Ui` skill is installed successfully.
+> 7. Don't change the `.gitignore` file.
+>
+> Use the `Expert React Frontend Engineer` custom agent and the `Premium Frontend Ui` skill as guidance for the remaining React frontend activities in this step.
+>
+> Don't proceed with the next activity until all of these steps are completed.
+> ```
+
+### Activity: Install the octofit-tracker frontend React framework
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -42,7 +69,7 @@ In this step, we will accomplish the following:
 > Don't proceed with the next activity until all of these steps are completed.
 >```
 
-### :keyboard: Activity: Update the octofit-tracker frontend React components
+### Activity: Update the octofit-tracker frontend React components
 
 > 🪧 **Note:** 
 - Make sure to replace [REPLACE-THIS-WITH-YOUR-CODESPACE-NAME] with your codespace name.
@@ -76,11 +103,11 @@ In this step, we will accomplish the following:
   - ex. redesigned-spork-g6pj46rr9hpp6x
 - You can get the codespace name by running the following command in the terminal: `echo $CODESPACE_NAME`.
 
-### :keyboard: Activity: Start the react app and check the output
+### Activity: Start the react app and check the output
 
 Now, let's actually try running the react application! In the left sidebar, select the `Run and Debug` tab and then press the **Start Debugging** icon.
 
-### :keyboard: Activity: Let's add some formatting, structuring, and styling to the octofit tracker app
+### Activity: Let's add some formatting, structuring, and styling to the octofit tracker app
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -100,7 +127,7 @@ Now, let's actually try running the react application! In the left sidebar, sele
 > Don't proceed with the next activity until all of these steps are completed.
 >```
 
-### :keyboard: Optional Activity: Let's make the octofit tracker app look nice, pretty, and add some color
+### Optional Activity: Let's make the octofit tracker app look nice, pretty, and add some color
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -121,7 +148,7 @@ Now, let's actually try running the react application! In the left sidebar, sele
 >Don't proceed with the next activity until all of these steps are completed.
 >```
 
-### :keyboard: Optional Activity: Iterate on the appearance and try different models
+### Optional Activity: Iterate on the appearance and try different models
 
 > 🧪 **Try this:**
 - Try creating your own prompts to change the application appearance, add features, and try different models.

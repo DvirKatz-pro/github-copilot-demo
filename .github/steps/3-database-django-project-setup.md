@@ -19,7 +19,7 @@ In this step, we will accomplish the following:
 - Keep files created and updated by Copilot agent mode until it is finished.
 - Agent mode has the ability to evaluate your code base and execute commands and add/refactor/delete parts of your code base and automatically self heal if it or you makes a mistake in the process.
 
-### :keyboard: Activity: Install the Context7 MCP server and enable tools
+### Activity: Install the Context7 MCP server and enable tools
 
 Before setting up Django, we'll install the Context7 MCP server so Copilot agent mode can fetch up-to-date documentation for libraries like Django, Django REST Framework, and djongo directly in chat.
 
@@ -36,7 +36,7 @@ Before setting up Django, we'll install the Context7 MCP server so Copilot agent
 
 > ❕ **Important:** Make sure the Context7 MCP server is running and tools are enabled before proceeding to the next activity.
 
-### :keyboard: Activity: Setup the Python Django project/app
+### Activity: Setup the Python Django project/app
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -55,7 +55,7 @@ Before setting up Django, we'll install the Context7 MCP server so Copilot agent
 
 > ❕ **Important:** Don't start the Python Django app in the way that GitHub Copilot agent mode suggests hit **cancel**.
 
-### :keyboard: Activity: Initialize and create the octofit_db MongoDB database
+### Activity: Initialize and create the octofit_db MongoDB database
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -76,7 +76,7 @@ Before setting up Django, we'll install the Context7 MCP server so Copilot agent
 - If there is no "Continue" button, just pull the left side of the GitHub Copilot Chat panel over to the left, and it should appear.
 - If this doesn't work, you may need to copy and paste the response in the terminal if there is no "Continue" button.
 
-### :keyboard: Activity: Update the Python Django project/app files
+### Activity: Update the Python Django project/app files
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >
@@ -100,7 +100,7 @@ Before setting up Django, we'll install the Context7 MCP server so Copilot agent
 
 > ❕ **Important:** Don't start the Python Django app in the way that GitHub Copilot agent mode suggests hit **cancel**.
 
-### :keyboard: Activity: Populate the octofit_db database with test data from Django project/app files
+### Activity: Populate the octofit_db database with test data from Django project/app files
 
 > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=flat-square&logo=github%20copilot&labelColor=512a97&color=ecd8ff)
 >

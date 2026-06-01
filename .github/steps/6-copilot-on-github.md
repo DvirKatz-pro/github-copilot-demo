@@ -16,7 +16,7 @@ More eyes on our work is always useful so let's ask Copilot to do a first pass b
 > [!NOTE]  
 > This is in **Public Preview** for organizations. [[docs]](https://docs.github.com/en/copilot/using-github-copilot/code-review/using-copilot-code-review)
 
-### :keyboard: Activity: Summarize and review a PR with Copilot
+### Activity: Summarize and review a PR with Copilot
 
 Both **pull request summaries** and **copilot review** have limited access, so this activity is mostly optional. If you have access, Mona will gladly check your work though! If not, you can skip the optional steps.
 

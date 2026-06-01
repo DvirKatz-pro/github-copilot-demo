@@ -16,7 +16,7 @@ Monitors the correctness of code edits and terminal command output and iterates 
 
 > 💡 **Tip:** You can learn more about GitHub Copilot agent mode in the [Use agent mode documentation](https://code.visualstudio.com/docs/copilot/copilot-edits#_use-agent-mode-preview).
 
-### :keyboard: Activity: Fork the repository and set up your development environment
+### Activity: Fork the repository and set up your development environment
 
 Before launching your environment, you need your own copy of the repository to save your work.
 
@@ -24,7 +24,7 @@ Before launching your environment, you need your own copy of the repository to s
 2. Under **Owner**, select your personal GitHub account. Leave the repository name as is, ensure "Copy the `main` branch only" is checked, and click **Create fork**.
 3. Once the fork is created, you will be redirected to your personal copy of the repository.
 
-### :keyboard: Activity: Getting to know your GitHub Copilot agent mode development environment
+### Activity: Getting to know your GitHub Copilot agent mode development environment
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab.
 
@@ -54,7 +54,7 @@ Before launching your environment, you need your own copy of the repository to s
     - If you are using Copilot Chat for the first time, you will also have to accept the usage terms to continue.
     - Click the **Accept** button to continue.
 
-### :keyboard: Activity: Use Copilot agent mode to create a branch and publish it. 🙋
+### Activity: Use Copilot agent mode to create a branch and publish it. 🙋
 
 Great work! Now that we are familiar with the app and we know it works, let's ask copilot for help starting a branch so we can do some customizing.
 
