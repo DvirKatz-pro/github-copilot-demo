@@ -1,7 +1,8 @@
+import os
+
 from rest_framework import viewsets
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework.reverse import reverse
 
 from .models import Activity, Leaderboard, Team, User, Workout
 from .serializers import (
@@ -13,14 +14,23 @@ from .serializers import (
 )
 
 
+def get_base_url(request):
+    # Codespaces terminates HTTPS at its proxy, so build the public https URL explicitly.
+    codespace_name = os.environ.get('CODESPACE_NAME')
+    if codespace_name:
+        return f'https://{codespace_name}-8000.app.github.dev/'
+    return request.build_absolute_uri('/')
+
+
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = get_base_url(request)
     return Response({
-        'users': reverse('user-list', request=request, format=format),
-        'teams': reverse('team-list', request=request, format=format),
-        'activities': reverse('activity-list', request=request, format=format),
-        'leaderboard': reverse('leaderboard-list', request=request, format=format),
-        'workouts': reverse('workout-list', request=request, format=format),
+        'users': base_url + 'api/users/',
+        'teams': base_url + 'api/teams/',
+        'activities': base_url + 'api/activities/',
+        'leaderboard': base_url + 'api/leaderboard/',
+        'workouts': base_url + 'api/workouts/',
     })
 
 

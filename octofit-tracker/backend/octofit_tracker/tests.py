@@ -1,4 +1,6 @@
+import os
 from datetime import timedelta
+from unittest import mock
 
 from django.urls import reverse
 from rest_framework import status
@@ -51,10 +53,17 @@ class OctofitApiTests(APITestCase):
         Workout.objects.create(name='Running Training', description='Training for a marathon')
 
     def test_api_root(self):
-        response = self.client.get(reverse('api-root'))
+        response = self.client.get('/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         for key in ('users', 'teams', 'activities', 'leaderboard', 'workouts'):
             self.assertIn(key, response.data)
+
+    def test_api_root_uses_codespace_url(self):
+        with mock.patch.dict(os.environ, {'CODESPACE_NAME': 'my-codespace'}):
+            response = self.client.get('/')
+        self.assertEqual(
+            response.data['users'], 'https://my-codespace-8000.app.github.dev/api/users/'
+        )
 
     def test_list_endpoints(self):
         for name in ('user', 'team', 'activity', 'leaderboard', 'workout'):
